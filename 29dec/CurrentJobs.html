@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css"/>
+    <link rel="stylesheet" href="HeaderFooterBar.css"/>
+    <link rel="stylesheet" href="pa&tuStyles.css"/>
+
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <title>Current Jobs</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar" id="navbar">
+        <h2 class="navbar-logo"><a href="#">CARE ACADEMY</a></h2>
+        <div class="navbar-menu" id="navbar-menu[tutorpage]">
+            <div><a href="#requests">Job Requests</a></div>
+            <div><a href="#current-jobs" class="active">Current Jobs</a></div>
+            <div><a href="#previous-jobs">Previous jobs</a></div>
+            <div><a href="#">Sign out</a></div>
+            <div class="dropdown-btn">
+                <a href="#" class="dd">Manage Profile</a>
+                <ul class="dropdown">
+                    <li><a href="#">View Profile</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#" class="red-btn">Delete Profile</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <!--header-->
+    <header class="tutor-header">
+        <h1 class="header-title">Hello Deema!</h1>
+    <h4 class="TutorHeader-text">Better than a thousand days <br>of diligent study is one day <br>with a great teacher.</h4>
+        </p>
+    </header>
+
+    <!--CURRENT JOBS START-->
+  <div class="rev-section">
+    <div class="reviews">
+
+    <!--JOB1-->
+    <div class="review">
+       <div class="body-review">
+        <img class ="kid-img" src="Alana-Martina-dos-Santos-Aveiro-Daughter-Of-Cristiano-Ronaldo3.jpg">
+          <div class="order-num">Order#1</div>
+          <div class="kid-name">Alana Martina</div>
+          <div class="kid-grade">3rd Grade</div>
+          <div class="subject">Math class| Online</div>
+          <div class="order-date">Starts on: 28/03/2020</div>
+          <div class="order-time">From 6:00AM to 7:50AM</div>
+        </div><!--body-review-->
+      </div><!--review-->
+    
+  
+  <!--JOB2-->
+  <div class="review">
+    <div class="body-review">
+      <img class ="kid-img" src="cole-dylan.png">
+      <div class="order-num">Order#2</div>
+          <div class="kid-name">Cole Dylan</div>
+          <div class="kid-grade">5th Grade</div>
+          <div class="subject">Science class| In-person</div>
+          <div class="order-date">Starts on: 20/01/2023</div>
+          <div class="order-time">From 10:00AM to 11:50AM</div>
+    </div><!--body-review-->
+  </div><!--review-->
+  
+  <!--JOB3-->
+  <div class="review">
+    <div class="body-review">
+      <img class ="kid-img" src="jeremy-maguire.jpg">
+      <div class="order-num">Order#3</div>
+          <div class="kid-name">Jeremy Maguire</div>
+          <div class="kid-grade">2nd Grade</div>
+          <div class="subject">English class| In-person</div>
+          <div class="order-date">Starts on: 16/01/2023</div>
+          <div class="order-time">From 10:00AM to 11:50AM</div>
+    </div><!--body-review-->
+  </div><!--review-->
+  
+  
+  </div><!--reviews-->
+  </div><!--rev-section">-->
+
+<!--CURRENT JOBS END-->
+
+    
+
+      <button class="req-more">Show More</button>  
+    <!--footer-->
+<footer>
+    <div class="container">
+      <div class="left">
+        <h2>Contact Us</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt" ></span>
+            <span class="text">Riyadh 11495 Kingdom of Saudi Arabia</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+996-5643892</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">info@CareAcademy.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+    <center>
+    <div><span><a href="our web">© CareAcademy</a>, All Right Reserved. Designed By someone</a></span></div>
+    </center>
+    </div>
+</footer>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("navbar-menu[tutorpage]");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

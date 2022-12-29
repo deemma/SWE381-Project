@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css"/>
+    <link rel="stylesheet" href="HeaderFooterBar.css"/>
+    <link rel="stylesheet" href="pa&tuStyles.css"/>
+
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <title>ParentPage</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar" id="navbar">
+        <h2 class="navbar-logo"><a href="#">CARE ACADEMY</a></h2>
+        <div class="navbar-menu" id="navbar-menu[tutorpage]">
+            <div><a href="#current-booking" class="active">Current Booking</a></div>
+            <div><a href="#previous-booking">Previous Booking</a></div>
+            <div><a href="#offers">Offers</a></div>
+            <div><a href="#">Sign out</a></div>
+            <div class="dropdown-btn">
+                <a href="#" class="dd">Manage Profile</a>
+                <ul class="dropdown">
+                    <li><a href="#">View Profile</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#" class="red-btn">Delete Profile</a></li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+    <!--header-->
+    <header class="parent-header">
+        <h1 class="header-title" id="Parentpage-title">Hello Deema!</h1>
+        <h4 class="ParentHeader-text">Don't worry. Your child's education is our top priority.</h4>  
+        <div id="ParentButton"><button type="button">Request a tutor</button></div>    
+      </header>
+
+<!--Post A request button-->
+
+<div class="Jobcontainer">
+ <img src=" images/close.png" class="close">
+ <div class="form-container job-request-container">
+
+    <form action="#">
+    <h2>Post a Request</h2>
+    <input type="text" Kid-name="kid's name" value="Kid's name"/> <br>
+    <input type="text" Age="Age" value="Age"/><br>
+    <h5>Type Of class:</h5>
+    <label1 for="online">Online Classes
+    <input type="radio" id="Online" name="ClassType" value="online" /></label1>
+    <label1 for="inPerson">In-person classes
+    <input type="radio" id="inPerson" name="ClassType" value="inPerson" /></label1><br>
+
+    <label for="Subjects">Choose a subject:</label>
+    <select name=" Subjects" id="subjects">
+      <option value=" Science">Science</option>
+      <option value=" math">Math</option>
+      <option value="computing">Computing</option>
+      <option value=" ArtANDhumanities">Art & Humanities</option>
+      <option value=" english">English</option>
+      <option value="arabic">Arabic</option>
+      <option value="islamics">Islamics</option>
+    </select> <br>
+    <label for="Class-Duration">Class Duration:</label>
+    <select name="duration" id="duration">
+        <option value="60min">60 minutes</option>
+        <option value=" 90min">90 minutes</option>
+        <option value="120m">120 minutes</option>
+        <option value="180m">180 minutes</option>
+    </select><br>
+
+    <label for="class-time">Class time:</label>
+    <input type="datetime-local" id="class-time" name="class-time">
+    
+    <button>Submit</button>
+    </form>
+  </div>
+
+
+    <script>var parent = document.querySelector(".Jobcontainer"),
+     btn = document.querySelector("button"),
+     X = document.querySelector(".close"),
+     section = document.querySelector("section");
+     btn.addEventListener("click", appear, false);
+     document.querySelector(".close").addEventListener("click", disappearJobcontainer);
+
+
+     function appear() {
+      parent.style.display = "block";
+      section.style.filter = "blur(10px)" }
+      X.addEventListener("click", disappearX);
+      function disappearX() {
+      parent.style.display = "none";
+      section.style.filter = "blur(0px)"}
+
+      function disappearJobcontainer(e) {
+      if (e.target.className == "Jobcontainer") {
+      parent.style.display = "none";
+    section.style.filter = "blur(0px)" }
+      }
+    </script>
+    </div>
+<!--end of Post A request button-->
+ <!--End requests part-->
+    
+
+<!--CURRENT BOOKINGS START-->
+<div class="rev-section">
+    <div class="reviews">
+
+    <!--BOOKING1-->
+    <div class="review">
+       <div class="body-review">
+        <img class ="kid-img" src="Alana-Martina-dos-Santos-Aveiro-Daughter-Of-Cristiano-Ronaldo3.jpg">
+          <div class="req-num">Request#1</div>
+          <div class="kid-name">Alana Martina</div>
+          <div class="kid-grade">3rd Grade</div>
+          <div class="subject">Math class| Online</div>
+          <div class="order-date">Starts on: 28/03/2020 - From 6:00AM to 7:50AM</div>
+          <div class="tutor-name">Tutor| Mr. Jim Halpert </div>
+          <div class="price">Price | 400 SR per hour</div>
+          <div class="req-status">Accepted</div>
+        </div><!--body-review-->
+      </div><!--review-->
+    
+  
+    <!--BOOKING2-->
+    <div class="review">
+      <div class="body-review">
+        <img class ="kid-img" src="cole-dylan.png">
+        <div class="req-num">Request#2</div>
+         <div class="kid-name">Cole Dylan</div>
+         <div class="kid-grade">5th Grade</div>
+         <div class="subject">Math class| Online</div>
+         <div class="order-date">Starts on: 28/03/2020 - From 6:00AM to 7:50AM</div>
+         <div class="tutor-name">Tutor| Mr. Jim Halpert </div>
+         <div class="price">Price | 800 SR per hour</div>
+         <div class="req-status">Accepted</div>
+       </div><!--body-review-->
+     </div><!--review-->
+   
+
+       <!--BOOKING3-->
+    <div class="review">
+      <div class="body-review">
+        <img class ="kid-img" src="jeremy-maguire.jpg">
+        <div class="req-num">Request#3</div>
+        <div class="kid-name">Jeremy Maguire</div>
+        <div class="kid-grade">2nd Grade</div>
+        <div class="subject">English class| In-person</div>
+        <div class="order-date">Starts on: 16/01/2023 - From 6:00AM to 7:50AM</div>
+         <div class="tutor-name">Tutor| Mr. Jim Halpert </div>
+         <div class="price">Price | 800 SR per hour</div>
+         <div class="req-status">Accepted</div>
+       </div><!--body-review-->
+     </div><!--review-->
+   
+
+  <!--BOOKING4-->
+  <div class="review">
+    <div class="body-review">
+      <img class ="kid-img" src="selena.gomez.jpg">
+      <div class="req-num">Request#4</div>
+      <div class="kid-name">Selena Marie</div>
+      <div class="kid-grade">2nd Grade</div>
+      <div class="subject">English class| In-person</div>
+      <div class="order-date">Starts on: 16/01/2023 - From 6:00AM to 7:50AM</div>
+       <div class="tutor-name">Tutor| Mr. Dwight Schrute </div>
+       <div class="req-status" style="color:grey;">Pending</div>
+       <button class ="e-btn">Edit</button>
+       <button class="d-btn">Delete</button>
+
+     </div><!--body-review-->
+   </div><!--review-->
+ 
+  
+  </div><!--reviews-->
+  </div><!--rev-section">-->
+
+<!--CURRENT JOBS END-->
+
+
+
+
+
+    <!--footer-->
+<footer>
+    <div class="container">
+      <div class="left">
+        <h2>Contact Us</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt" ></span>
+            <span class="text">Riyadh 11495 Kingdom of Saudi Arabia</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+996-5643892</span>
+          </div>
+          <div class="email">
+            <span class="fas fa-envelope"></span>
+            <span class="text">info@CareAcademy.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+    <center>
+    <div><span><a href="our web">© CareAcademy</a>, All Right Reserved. Designed By someone</a></span></div>
+    </center>
+    </div>
+</footer>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("navbar-menu[tutorpage]");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>
