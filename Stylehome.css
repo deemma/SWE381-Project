@@ -1,0 +1,173 @@
+﻿ /*Meet our tutors part*/
+ .MeetTheTeam-section {
+     padding: 40px 0;
+ }
+
+ .inner {
+     /*This is the main sentence: Meet our highly .....*/
+     text-align: center;
+     font-weight: bold;
+     font-size: 22px;
+     text-transform: uppercase;
+     text-align: center;
+     margin: auto;
+     overflow: hidden;
+     padding: 0 20px;
+     margin-top: 230px;
+
+ }
+
+ .border {
+     /*This is the line under the sentence*/
+     width: 600px;
+     height: 3px;
+     background: grey;
+     margin: 20px auto 5px;
+     display: block;
+ }
+
+ .row {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ .col {
+     flex: 33.33%;
+     max-width: 33.33%;
+     box-sizing: border-box;
+     padding: 15px;
+ }
+
+ .box {
+     background: #f6f8fa;
+     padding: 30px;
+     border-radius: 25px;
+     height: 250px;
+     resize: block;
+     overflow: auto;
+     margin-top: 40px;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 6px;
+     margin-bottom: 50px;
+ }
+
+ .box img {
+     width: 120px;
+     height: 120px;
+     margin-top: -20px;
+     border-radius: 50%;
+     left: calc(50% - 60px);
+     border: 5px solid white;
+     resize: horizontal;
+     overflow: auto;
+     margin-right: -25px;
+     float: right;
+ }
+
+ .tutor-name {
+     font-size: 22px;
+     font-weight: 600;
+     text-align: left;
+     font-family: sans-serif;
+     margin-top: -5px;
+     margin-left: -15px;
+
+ }
+
+ .tutor-biography {
+     text-align: left;
+     font-size: 17px;
+     font-weight: 100;
+     margin-top: 50px;
+     font-family: sans-serif;
+     text-transform: none;
+ }
+
+ @media screen and (max-width:960px) {
+     .col {
+         flex: 100%;
+         max-width: 80%;
+     }
+ }
+
+ @media screen and (max-width:600px) {
+     .col {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+
+ /*end of Meet our tutors part*/
+ /*about us*/
+ .about .main img {
+     width: 580px;
+     max-width: 300px;
+     height: auto;
+     padding: 0 10px;
+ }
+
+ .about {
+     margin-top: 200px;
+     margin-bottom: 150px;
+     height: 100px;
+     width: 100%;
+     background: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .all-text {
+     width: 600px;
+     max-width: 100%;
+     padding: 0 10px;
+ }
+
+ .main {
+     width: 1290px;
+     max-width: 95%;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: space-around;
+ }
+
+ .all-text h4 {
+     font-size: 18px;
+     color: #777777;
+     letter-spacing: 1px;
+     font-weight: 400;
+     margin-bottom: 10px;
+ }
+
+ .all-text h1 {
+     font-size: 65px;
+     color: #111111;
+     font-weight: 700;
+     margin-bottom: 20px;
+ }
+
+ .all-text p {
+     font-size: 16px;
+     color: #777777;
+     line-height: 30px;
+     margin-bottom: 35px;
+     text-align: justify;
+ }
+
+ @media screen and (max-width:960px) {
+     .col {
+         flex: 100%;
+         max-width: 80%;
+     }
+ }
+
+ @media screen and (max-width:600px) {
+     .col {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+
+ /*end of about us*/

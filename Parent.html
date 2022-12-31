@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="HeaderFooterBar.css" />
+    <link rel="stylesheet" href="pa&tuStyles.css" />
+    <link rel="stylesheet" href="Input.css" />
+    <link rel="stylesheet" href="Windows.css" />
+
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <title>ParentPage</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar" id="navbar">
+        <h2 class="navbar-logo"><a href="#">CARE ACADEMY</a></h2>
+        <div class="navbar-menu" id="navbar-menu[tutorpage]">
+            <div><a href="#current-booking" class="active">Current Booking</a></div>
+            <div><a href="#previous-booking">Previous Booking</a></div>
+            <div><a href="#offers">Offers</a></div>
+            <div><a href="#">Sign out</a></div>
+            <div class="dropdown-btn">
+                <a href="#" class="dd">Manage Profile</a>
+                <ul class="dropdown">
+                    <li><a href="#">View Profile</a></li>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#" class="red-btn">Delete Profile</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--header-->
+    <header class="parent-header">
+        <h1 class="header-title" id="Parentpage-title">
+
+            Hello AlAnoud!
+
+        </h1>
+
+        <p>
+            <h4 class="ParentHeader-text">We help your child learn to succeed</h4>
+
+            <button id="PostRequestBtn" type="button">Request a tutor</button>
+
+        </p>
+    </header>
+    <!-- end of header-->
+    <!--Post A request button-->
+
+
+
+    <div class="PostRequest">
+
+
+
+        <img src=" images/close2.png" alt="closing button"class="closeRequestForm">
+
+
+        <div class="form-container job-request-container">
+
+            <form method="post">
+                <h2>Post a Request</h2>
+
+                <input type="text" Kid-name="kid's name" value="Kid's name" />
+                <br>
+                <input type="text" Age="Age" value="Age" />
+
+                <br>
+
+                <label for="ClaasType:">Type Of Class</label>
+                <select name="classType" id="classType">
+                    <option value="Choose"selected>Choose</option>
+                    <option value="Online">Online Classes</option>
+                    <option value=" 90min">In-person Classes</option>
+
+                </select>
+                <br>
+
+                <label for="Subjects">Choose a subject</label>
+                <select name=" Subjects" id="subjects">
+                    <option value="Choose" selected>Choose</option>
+                    <option value=" Science">Science</option>
+                    <option value=" math">Math</option>
+                    <option value="computing">Computing</option>
+                    <option value=" ArtANDhumanities">Art & Humanities</option>
+                    <option value=" english">English</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="islamics">Islamics</option>
+                </select>
+                <br>
+
+                <label for="Class-Duration">Class Duration</label>
+                <select name="duration" id="duration">
+                    <option value="Choose" selected>Choose</option>
+                    <option value="60min">60 minutes</option>
+                    <option value=" 90min">90 minutes</option>
+                    <option value="120m">120 minutes</option>
+                    <option value="180m">180 minutes</option>
+
+                </select>
+                <br>
+
+                <label for="classtime">Class time</label>
+                <input type="datetime-local" id="classtime" name="classtime">
+
+                <button type="submit">Submit</button>
+
+            </form>
+
+        </div>
+
+
+        <script>var parent = document.querySelector(".PostRequest"),
+              btn = document.querySelector("#PostRequestBtn"),
+               section = document.querySelector("section");
+            X = document.querySelector(".closeRequestForm"),
+               
+            btn.addEventListener("click", appear, false);
+
+            document.querySelector(".closeRequestForm").addEventListener("click", disappearPostRequest);
+
+
+            function appear() {
+                parent.style.display = "block";
+                section.style.filter = "blur(10px)"
+            }
+
+            X.addEventListener("click", disappearX);
+
+            function disappearX() {
+                parent.style.display = "none";
+                section.style.filter = "blur(0px)"
+            }
+
+            function disappearPostRequest(e) {
+                if (e.target.className == ".PostRequest") {
+                    parent.style.display = "none";
+                    section.style.filter = "blur(0px)"
+                }
+
+            }</script>
+    </div>
+
+
+
+
+    <!--end of Post A request button-->
+    <!--CURRENT BOOKINGS START-->
+    <div class="rev-section">
+        <div class="reviews">
+
+            <!--BOOKING1-->
+            <div class="review">
+                <div class="body-review">
+                    <img class="kid-img" src="images/Alana-Martina-dos-Santos-Aveiro-Daughter-Of-Cristiano-Ronaldo3.jpg" alt="this is a picture of Anoud Alfakhri, One of our students">
+                    <div class="req-num">Request#1</div>
+                    <div class="kid-name">Anoud Alfakhri</div>
+                    <div class="kid-grade">3rd Grade</div>
+                    <div class="subject">Math class| Online</div>
+                    <div class="order-date">Starts on: 28/03/2020 - From 5:00PM to 7:30PM</div>
+                    <div class="tutor-name">Tutor| Miss. Lamya Ibrahim </div>
+                    <div class="price">Price | 250 SR per hour</div>
+                    <div class="req-status">Accepted</div>
+                </div><!--body-review-->
+            </div><!--review-->
+            <!--BOOKING2-->
+            <div class="review">
+                <div class="body-review">
+                    <img class="kid-img" src="images/cole-dylan.png" alt="this is a picture of Bandar Altuwaijry, One of our students">
+                    <div class="req-num">Request#2</div>
+                    <div class="kid-name">Bandar Altuwaijry</div>
+                    <div class="kid-grade">5th Grade</div>
+                    <div class="subject">Math class| Online</div>
+                    <div class="order-date">Starts on: 28/03/2020 - From 1:00PM to 3:30PM</div>
+                    <div class="tutor-name">Tutor| Mr. Faisal Khalid </div>
+                    <div class="price">Price | 200 SR per hour</div>
+                    <div class="req-status">Accepted</div>
+                </div><!--body-review-->
+            </div><!--review-->
+            <!--BOOKING3-->
+            <div class="review">
+                <div class="body-review">
+                    <img class="kid-img" src="images/jeremy-maguire.jpg" alt="this is a picture of Abdullah Alzaid, One of our students">
+                    <div class="req-num">Request#3</div>
+                    <div class="kid-name">Abdullah Alzaid</div>
+                    <div class="kid-grade">2nd Grade</div>
+                    <div class="subject">Islamics class| In-person</div>
+                    <div class="order-date">Starts on: 16/01/2023 - From 9:00AM to 11:00AM</div>
+                    <div class="tutor-name">Tutor| Mr. Mohammad Alqahtani </div>
+                    <div class="price">Price | 100 SR per hour</div>
+                    <div class="req-status">Accepted</div>
+                </div><!--body-review-->
+            </div><!--review-->
+            <!--BOOKING4-->
+            <div class="review">
+                <div class="body-review">
+                    <img class="kid-img" src="images/selena.gomez.jpg" alt="this is a picture of Lama Alnasser, One of our students">
+                    <div class="req-num">Request#4</div>
+                    <div class="kid-name">Lama Alnasser</div>
+                    <div class="kid-grade">2nd Grade</div>
+                    <div class="subject">English class| In-person</div>
+                    <div class="order-date">Starts on: 12/29/2022 - From 3:30PM to 4:30PM</div>
+                    <div class="tutor-name">Tutor| Miss. Sarah Abdulaziz </div>
+                    <div class="req-status" style="color:grey;">Pending</div>
+
+
+                    <button class="e-btn" type="button">Edit</button>
+
+
+                    <button class="d-btn">Delete</button>
+
+                </div>
+
+
+                <!--body-review-->
+            </div><!--review-->
+
+
+        </div><!--reviews-->
+    </div>
+    <!--rev-section">-->
+    <!--CURRENT JOBS END-->
+
+    <!--Edit request Part-->
+ 
+    <div class="EditRequest">
+
+
+
+         <img src=" images/close.png" alt="closing button" class="closeEditRequest">
+
+
+        <div class="form-container job-request-container">
+
+            <form method="post">
+                <h2>Edit Request</h2>
+
+                <label for="Kidname">Kid's name</label>
+                <input type="text" Kidname="kid's-name" value="Lama Alnasser" />
+                <br>
+                <label for="Kidname">Age</label>
+                <input type="text" Age="Age" value="7" />
+
+                <br>
+
+                <label for="ClaasType:">Type Of Class</label>
+                <select name="classType" id="classType">
+                    <option value="Online">Online Classes</option>
+                    <option value="inPerson" selected>In-person Classes</option>
+
+                </select>
+                <br>
+
+                <label for="Subjects">Choose a subject</label>
+                <select name=" Subjects" id="subjects">
+                    <option value=" Science">Science</option>
+                    <option value=" math">Math</option>
+                    <option value="computing">Computing</option>
+                    <option value=" ArtANDhumanities">Art & Humanities</option>
+                    <option value=" english" selected>English</option>
+                    <option value="arabic">Arabic</option>
+                    <option value="islamics">Islamics</option>
+                </select>
+                <br>
+
+                <label for="Class-Duration">Class Duration</label>
+                <select name="duration" id="duration">
+                    <option value="60min">60 minutes</option>
+                    <option value=" 90min">90 minutes</option>
+                    <option value="120m">120 minutes</option>
+                    <option value="180m">180 minutes</option>
+
+                </select>
+                <br>
+
+                <label for="classtime">Class time</label>
+                <input type="datetime-local" id="classtime" name="classtime" value="2022-12-29T15:30">
+                <button type="submit">Save &amp; Submit</button>
+
+                
+
+            </form>
+            
+             
+        </div>
+
+
+        <script>var parent1 = document.querySelector(".EditRequest"),
+             btn1 = document.querySelector(".e-btn"),
+            closingBTN = document.querySelector(".closeEditRequest"),
+              section1 = document.querySelector("section1");
+
+            btn1.addEventListener("click", appear, false);
+
+            document.querySelector(".closeEditRequest").addEventListener("click", disappearEditRequest);
+
+            closingBTN.addEventListener("click", disappearX);
+            
+
+
+            function appear() {
+               
+                parent1.style.display = "block";
+                section1.style.filter = "blur(10px)"
+            }
+
+           
+
+
+            function disappearX() {
+               
+                parent1.style.display = "none";
+                section1.style.filter = "blur(0px)"
+            }
+
+            function disappearEditRequest(e) {
+                if (e.target.ClassName == ".EditRequest") {
+                    parent1.style.display = "none";
+                    section1.style.filter = "blur(0px)"
+                }
+
+            }</script>
+       
+    </div>
+
+
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="left">
+                <h2>Contact Us</h2>
+                <div class="content">
+                    <div class="place">
+                        <span class="fas fa-map-marker-alt"></span>
+                        <span class="text">Riyadh 11495 Kingdom of Saudi Arabia</span>
+                    </div>
+                    <div class="phone">
+                        <span class="fas fa-phone-alt"></span>
+                        <span class="text">+996-5643892</span>
+                    </div>
+                    <div class="email">
+                        <span class="fas fa-envelope"></span>
+                        <span class="text">info@CareAcademy.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <center>
+                <div><span><a href="our web">© CareAcademy</a>, All Right Reserved. Designed By someone</a></span></div>
+            </center>
+        </div>
+    </footer>
+
+    <script>var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("navbar-menu[tutorpage]");
+
+        window.onscroll = function () {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            }
+            else {
+                navbar.classList.remove("sticky");
+            }
+        }</script>
+</body>
+</html>
