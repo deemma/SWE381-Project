@@ -250,9 +250,20 @@
 }
 
 .req-status {
-  color: darkgreen;
   font-weight: bolder;
   font-size: 1.3rem;
+}
+
+#accepted{
+  color: green;
+}
+
+#rejected{
+  color: red;
+}
+
+#pending{
+  color: gray;
 }
 
 .order-date,
@@ -260,7 +271,8 @@
 .kid-name,
 .subject,
 .kid-grade,
-.tutor-name {
+.tutor-name,
+.price {
   font-size: 1rem;
   font-weight: 850;
 
