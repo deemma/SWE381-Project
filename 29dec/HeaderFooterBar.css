@@ -90,6 +90,10 @@ h1 {
     display: block;
 }
 
+.dropdown-booking a {
+    display: block;
+}
+
 .dropdown {
     width: 15%;
     background: var(--whiteColor);
@@ -97,6 +101,21 @@ h1 {
     position: absolute;
     right: 20%;
     left: 80%;
+    top: 4rem;
+    padding: 0.75rem;
+    z-index: 999;
+    opacity: 0;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.dropdown-booking{
+    width: 15%;
+    background: var(--whiteColor);
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 4px 6px;
+    position: absolute;
+    right: 60%;
+    left: 60%;
     top: 4rem;
     padding: .75rem;
     z-index: 999;
@@ -106,6 +125,9 @@ h1 {
 }
 
 .dropdown-btn:hover .dropdown {
+    opacity: 1;
+}
+.dropdown-btn:hover .dropdown-booking {
     opacity: 1;
 }
 
