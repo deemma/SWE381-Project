@@ -278,6 +278,19 @@
 
 }
 
+.a-btn:hover{
+  color: green;
+  background-color: #fff;
+}
+.r-btn:hover{
+  color:red;
+  background-color: #fff;
+}
+
+#highlighted{
+  color:#0076de;
+}
+
 
 @media (max-width: 678px) {
   .review {
