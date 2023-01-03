@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/button.css" />
+    <link rel="stylesheet" href="../../CSS/HeaderFooterBar.css" />
+    <link rel="stylesheet" href="../../CSS/pa&tuStyles.css" />
+    <link rel="stylesheet" href="../../CSS/Windows.css" />
+
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <title>TutorPage</title>
+</head>
+<body>
+    <!--nav bar-->
+    <nav class="navbar" id="navbar">
+        <h2 class="navbar-logo"><a href="#">CARE ACADEMY</a></h2>
+        <div class="navbar-menu" id="navbar-menu[tutorpage]">
+            <div><a href="../Tutor/Tutor.html" class="active">Job Requests</a></div>
+            <div><a href="../Tutor/CurrentJobs.html">Current Jobs</a></div>
+            <div><a href="../Tutor/PreviousJobs.html">Previous jobs</a></div>
+            <div><a href="../Tutor/Tutor[offers].html" >Offers</a></div>
+            <div><a href="../Tutor/ManageProfile[Tutor].html" class="dd">Manage Profile</a></div>
+            <div><a href="../index.html">Sign out</a></div>
+        </div>
+    </nav>
+    <!--header-->
+    <header class="tutor-header">
+        <h1 class="header-title">
+            Hello Deema!
+        </h1>
+            <h4 class="TutorHeader-text">Better than a thousand days <br>of diligent study is one day <br>with a great teacher.</h4>
+        </p>
+    </header>
+
+ <!--REQUESTS START-->
+<div class="rev-section">
+    <div class="reviews">
+
+    <!--REQUEST1-->
+    <div class="review">
+        <div class="body-review">
+            <img class="kid-img" src="../../images/4kid.jpg"alt="profile photo">
+            <div class="order-num">Request#1</div>
+            <div class="kid-name">Lama Alnasser</div>
+            <div class="kid-grade">Age 13</div>
+            <div class="subject">Math class| Online</div>
+            <div class="order-date">Starts on: 28/03/2020 - From 6:00AM to 7:50AM</div>
+
+            <!--send offer button-->
+
+            <div id="SendOfferBTN">
+                <button type="button">Send Offer</button>
+            </div>
+
+
+
+            <div class="offer">
+                <form method="post">
+                    <h2>Send Offer</h2>
+                    <br />
+
+                    <label for="price"> Session's price</label>
+                    <select name="price" id="price">
+                        <option value="Choose" selected>Choose</option>
+                        <option value="100"> 100 SAR/hr</option>
+                        <option value=" 150">150 SAR/hr</option>
+                        <option value=" 200">200 SAR/hr</option>
+                        <option value=" 250">250 SAR/hr</option>
+                        <option value=" 300">300 SAR/hr</option>
+
+                    </select>
+
+                    <div id="SubmitBTN-inSendOffer">
+                        <button type="submit"> Submit</button>
+                    </div>
+                </form>
+
+                <script>var parent = document.querySelector(".offer"),
+                        btn = document.querySelector("#SendOfferBTN"),
+                        section = document.querySelector("section");
+
+
+                    btn.addEventListener("click", appear, false);
+
+
+                    function appear() {
+                        parent.style.display = "block";
+                        section.style.filter = "blur(10px)"
+                    }
+
+
+                    function disappearOffer(e) {
+                        if (e.target.className == ".offer") {
+                            parent.style.display = "none";
+                            section.style.filter = "blur(0px)"
+                        }
+
+                    }</script>
+
+            </div>
+            <!--End of send offer button-->
+
+
+
+        </div><!--body-review-->
+      </div><!--review-->
+    
+  
+    <!--REQUEST2-->
+    <div class="review">
+        <div class="body-review">
+            <img class="kid-img" src="../../images/1kid.jpg"alt="This is a picture of one our students,Rayan Ahmad">
+            <div class="order-num">Request#2</div>
+            <div class="kid-name">Rayan Ahmad</div>
+            <div class="kid-grade">Age 9</div>
+            <div class="subject">Math class| Online</div>
+            <div class="order-date">Starts on: 28/03/2020 - From 6:00AM to 7:50AM</div>
+
+            <!--send offer button-->
+
+            <div id="SendOfferBTN2">
+                <button type="button">Send Offer</button>
+            </div>
+
+            <div class="offer2">
+
+                <form method="post">
+                    <h2>Send Offer</h2>
+                    <br />
+
+                    <label for="price"> Session's price</label>
+                    <select name="price" id="price">
+                        <option value="Choose" selected>Choose</option>
+                        <option value="100"> 100 SAR/hr</option>
+                        <option value=" 150">150 SAR/hr</option>
+                        <option value=" 200">200 SAR/hr</option>
+                        <option value=" 250">250 SAR/hr</option>
+                        <option value=" 300">300 SAR/hr</option>
+
+                    </select>
+                    <div id="SubmitBTN-inSendOffer">
+                        <button type="submit"> Submit</button>
+                    </div>
+                </form>
+
+                <script>var parent2 = document.querySelector(".offer2"),
+                        btn = document.querySelector("#SendOfferBTN2"),
+                        section2 = document.querySelector("section");
+
+
+                    btn.addEventListener("click", appear, false);
+
+
+                    function appear() {
+                        parent2.style.display = "block";
+                        section2.style.filter = "blur(10px)"
+                    }
+
+
+                    function disappearOffer2(e) {
+                        if (e.target.className == ".offer2") {
+                            parent2.style.display = "none";
+                            section2.style.filter = "blur(0px)"
+                        }
+
+                    }</script>
+
+            </div>
+            <!--End of send offer button-->
+
+        </div><!--body-review-->
+     </div><!--review-->
+   
+
+       <!--REQUEST3-->
+    <div class="review">
+        <div class="body-review">
+            <img class="kid-img" src="../../images/3kid.jpg"alt="This is a picture of one our students,Saad Alzamil">
+            <div class="order-num">Request#3</div>
+            <div class="kid-name">Saad Alzamil</div>
+            <div class="kid-grade">Age 17</div>
+            <div class="subject">Math class| In-person</div>
+            <div class="order-date">Starts on: 16/01/2023 - From 6:00AM to 7:50AM</div>
+
+            <!--send offer button-->
+
+            <div id="SendOfferBTN3">
+                <button type="button">Send Offer</button>
+            </div>
+
+            <div class="offer3">
+
+                <form method="post">
+                    <h2>Send Offer</h2>
+                    <br />
+
+
+                    <label for="price"> Session's price</label>
+                    <select name="price" id="price">
+                        <option value="Choose" selected>Choose</option>
+                        <option value="100"> 100 SAR/hr</option>
+                        <option value=" 150">150 SAR/hr</option>
+                        <option value=" 200">200 SAR/hr</option>
+                        <option value=" 250">250 SAR/hr</option>
+                        <option value=" 300">300 SAR/hr</option>
+
+                    </select>
+
+                    <div id="SubmitBTN-inSendOffer">
+                        <button type="submit"> Submit</button>
+                    </div>
+                </form>
+
+                <script>var parent3 = document.querySelector(".offer3"),
+                        btn = document.querySelector("#SendOfferBTN3"),
+                        section3 = document.querySelector("section");
+
+
+                    btn.addEventListener("click", appear, false);
+
+
+                    function appear() {
+                        parent3.style.display = "block";
+                        section3.style.filter = "blur(10px)"
+                    }
+
+
+                    function disappearOffer3(e) {
+                        if (e.target.className == ".offer3") {
+                            parent3.style.display = "none";
+                            section3.style.filter = "blur(0px)"
+                        }
+
+                    }</script>
+
+            </div>
+            <!--End of send offer button-->
+
+        </div><!--body-review-->
+     </div><!--review-->
+   
+
+  <!--REQUEST4-->
+  <div class="review">
+      <div class="body-review">
+          <img class="kid-img" src="../../images/2kid.jpg"alt="This is a picture of one our students,Rawan Alsaif">
+          <div class="order-num">Request#4</div>
+          <div class="kid-name">Rawan Alsaif</div>
+          <div class="kid-grade">Age 7</div>
+          <div class="subject">Math class| In-person</div>
+          <div class="order-date">Starts on: 16/01/2023 - From 6:00AM to 7:50AM</div>
+
+          <!--send offer button-->
+
+          <div id="SendOfferBTN4">
+              <button type="button">Send Offer</button>
+          </div>
+
+          <div class="offer4">
+
+
+
+              <form method="post">
+
+                  <h2>Send Offer</h2>
+
+                  <br />
+
+                  <label for="price"> Session's price</label>
+                  <select name="price" id="price">
+                      <option value="Choose" selected>Choose</option>
+                      <option value="100"> 100 SAR/hr</option>
+                      <option value=" 150">150 SAR/hr</option>
+                      <option value=" 200">200 SAR/hr</option>
+                      <option value=" 250">250 SAR/hr</option>
+                      <option value=" 300">300 SAR/hr</option>
+
+                  </select>
+
+
+                  <div id="SubmitBTN-inSendOffer">
+                      <button type="submit"> Submit</button>
+                  </div>
+              </form>
+
+              <script>var parent4 = document.querySelector(".offer4"),
+                      btn4 = document.querySelector("#SendOfferBTN4"),
+                      section4 = document.querySelector("section4");
+
+
+                  btn4.addEventListener("click", appear, false);
+
+
+                  function appear() {
+                      parent4.style.display = "block";
+                      section4.style.filter = "blur(10px)"
+                  }
+
+
+                  function disappearOffer4(e) {
+                      if (e.target.className == ".offer4") {
+                          parent4.style.display = "none";
+                          section4.style.filter = "blur(0px)"
+                      }
+
+                  }</script>
+
+          </div>
+          <!--End of send offer button-->
+
+      </div><!--body-review-->
+   </div><!--review-->
+ 
+  
+  </div><!--reviews-->
+  </div><!--rev-section">-->
+
+<!--CURRENT JOBS END-->
+
+    <!--footer-->
+<footer>
+    <div class="container">
+      <div class="left">
+        <h2>Contact Us</h2>
+        <div class="content">
+          <div class="place">
+            <span class="fas fa-map-marker-alt" ></span>
+            <span class="text">Riyadh 11495 Kingdom of Saudi Arabia</span>
+          </div>
+          <div class="phone">
+            <span class="fas fa-phone-alt"></span>
+            <span class="text">+996-5643892</span>
+          </div>
+          <div class="email">
+            <a href ="mailto:info@CareAcademy.com"> <span class="fas fa-envelope"></span></a>
+            <span class="text">info@CareAcademy.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+    <center>
+    <div><span><a href="#">© CareAcademy</a>, All Right Reserved. Designed By The Best Team</a></span></div>
+    </center>
+    </div>
+</footer>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("navbar-menu[tutorpage]");
+
+        window.onscroll = function(){
+            if(window.pageYOffset >= menu.offsetTop){
+                navbar.classList.add("sticky");
+            }
+            else{
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+</html>

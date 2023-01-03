@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manage profile</title>
+  <link rel="stylesheet" href="../../CSS/Container.css"> 
+  <link rel="stylesheet" href="../../CSS/button.css">  
+  <link rel="stylesheet" href="../../CSS/Input.css"> 
+  <link rel="stylesheet" href="../../CSS/Windows.css"/>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" id = "container">
+	
+	<div class="container" id = "container">
+		<div class="form-container sign-in-container">
+					<form action="#">
+						<div class="profilepic" id="manageprofileimg">
+							<img src="images/user3.jpeg" id="photo" >
+							<input type="file" id="file" accept="image/*">
+							<label for="file" id="uploadbutton">Edit</label>
+						</div><br><br><br><br><br>
+						<input type="text" name="Fist name" value="Nouf" />
+						<input type="text" name="Last name" value="Altowaijri" />
+						<input type="text" name="Id" value="442200915"/>
+						<input type="text" name="Gender" value="Female"/>
+						<input type="text" name="Email" value="Nouf@icloud.com"/>
+						<input type="text" name="Phone" value="0505198880"/>
+						<input type="text" name="City" value="Riyadh"/>
+						<textarea name="Bio">Software Enigneeering gradute from King Saud University,looking froward to give Computer lectures!</textarea>
+						<input type="password" name="Create Password"  value="nouf1234567" />
+						<button class="savechanges">Save</button>
+						<input type="button" value="Go back" onclick="history.back()" class="back">
+					</form>
+		</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+					<h1>Delete Account</h1>
+					<button class="D-btn" id="deletebtn">Delete</button>
+			</div>
+			</div>
+		</div>
+	</div>
+	<div class="DeleteAccount" >
+		<form method="post">
+			<h4>Are you sure you want to delete your account?</h4>
+			<button class="D-btn"  type="submit" formaction="../index.html">Delete</button>
+		</form>
+
+	<script>var parent = document.querySelector(".DeleteAccount"),
+			btn = document.querySelector("#deletebtn"),
+			section = document.querySelector("section");
+		X = document.querySelector(".closeRequestForm"),
+
+			btn.addEventListener("click", appear, false);
+
+		document.querySelector(".closeRequestForm").addEventListener("click", disappearPostRequest);
+
+		function appear() {
+			parent.style.display = "block";
+			section.style.filter = "blur(10px)"
+		}
+
+		X.addEventListener("click", disappearX);
+
+		function disappearX() {
+			parent.style.display = "none";
+			section.style.filter = "blur(0px)"
+		}
+
+		function disappearPostRequest(e) {
+			if (e.target.className == ".PostRequest") {
+				parent.style.display = "none";
+				section.style.filter = "blur(0px)"
+			}
+		}</script>
+</div>
+</div>
+
+
+
+</body>
+
+</html>

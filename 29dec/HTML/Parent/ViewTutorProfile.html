@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>View profile</title>
+  <link rel="stylesheet" href="../../CSS/Container.css">
+  <link rel="stylesheet" href="../../CSS/button.css">
+  <link rel="stylesheet" href="../../CSS/Input.css">
+  
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" id = "container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<div class="profilepic">
+				<img src="../../images/user3.jpeg" id="photo" alt="profile image" >
+			</div><br><br><br><br><br><br><br><br><br><br>
+			<h5>
+				<a href="mailto:nouf@icloud.com"><span id="mailhover" class="fas fa-envelope"></span></a>
+				Nouf Altowaijri
+			</h5>
+			<h5>Female</h5>
+			<h5>0505198880</h5>
+			<h5>Riyadh</h5>
+			<h5>Software Enigneeering gradute from King Saud University,looking froward to give Computer lectures!</h5>
+			<input type="button" value="Go back" onclick="history.back()" class="back">
+			<br><br><br><br><br><br><br><br>
+		</form>
+	</div>
+
+
+	<div class="form-container sign-up-container">
+		<form>
+			<h5>
+				The tutor is qualifued! my son's skilss have clearly improved.
+				<div class="rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				 </div>
+			</h5>
+			<h5>
+				Incredible patience and dedication. She really helped to gain better evaluation and to know physic in deep.
+				<div class="rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				 </div>
+			</h5>
+			<h5>
+				Helpful lesson.
+				<div class="rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				 </div>
+			</h5>
+			<h5>
+				Excellent tutor.
+				<div class="rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				 </div>
+			</h5>
+			<h5>
+				Fantastic with my daughter and is excellent at feeding back, helping her understand things and moving her forward.
+				<div class="rating">
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+					<i class="fas fa-star"></i>
+				 </div>
+			</h5>
+		</form>
+	</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>Reviews &amp; Ratings</h1>
+				<br>
+				<button class="ghost" id="signUp">View</button>
+			</div>
+			<div class="overlay-panel overlay-left">
+				<button class="ghost" id="signIn">Back</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active")
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active")
+	});
+</script>
+
+</body>
+
+</html>
