@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="../../CSS/Container.css">
+  <link rel="stylesheet" href="../../CSS/button.css">
+  <link rel="stylesheet" href="../../CSS/Input.css">
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"> 
+</head>
+
+<body>
+<div class="container" id = "container">
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<br>
+			<input type="email" name="Email" placeholder="Email" />
+			<input type="password" name="Password"  placeholder="Password" />
+			<button formaction="../Tutor/Tutor.html">Sign In</button>
+			<input type="button" value="Go back" onclick="history.back()" class="back">
+		</form>
+	</div>
+
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<br><br><br><br><br>
+			<div class="profilepic">
+				<img src="../../images/profile.png" id="photo" alt="default profile photo" >
+				<input type="file" id="file" accept="image/*">
+				<label for="file" id="uploadbutton">optional</label>
+			</div>
+			<input type="text" name="Fist name" placeholder="Fist name" />
+			<input type="text" name="Last name" placeholder="Last name" />
+			<input type="text" name="Id" placeholder="Id"/>
+			<input type="text" name="Gender" placeholder="Gender"/>
+			<input type="text" name="Email" placeholder="Email"/>
+			<input type="text" name="Phone" placeholder="Phone"/>
+			<input type="text" name="City" placeholder="City"/>
+			<textarea name="Bio" placeholder="Bio"></textarea>
+			<input type="password" name="Create Password"  placeholder="text" />
+			<button formaction="../Tutor/Tutor.html">Sign Up</button>
+		</form>
+	</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>Join us!</h1>
+				<br>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<br>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active")
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active")
+	});
+</script>
+
+</body>
+
+</html>

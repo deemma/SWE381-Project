@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Manage profile</title>
+  <link rel="stylesheet" href="../../CSS/Container.css"> 
+  <link rel="stylesheet" href="../../CSS/button.css"> 
+  <link rel="stylesheet" href="../../CSS/Input.css"> 
+  <link rel="stylesheet" href="../../CSS/Windows.css"/>
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Nunito&display=swap" rel="stylesheet">
+    <!--icons-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container" id = "container">
+	<div class="container" id = "container">
+		<div class="form-container sign-in-container">
+					<form action="#">
+						<div class="profilepic" id="manageprofileimg">
+							<img src="../../images/profile.png" id="photo" >
+							<input type="file" id="file" accept="image/*">
+							<label for="file" id="uploadbutton">Edit</label>
+						</div><br><br><br><br><br>
+						<input type="text" name="Fist name" value="Hanan" />
+						<input type="text" name="Last name" value="Altowaijri" />
+						<input type="text" name="Email" value="Hanan@icloud.com"/>
+						<input type="text" name="City" value="Riyadh"/>
+						<textarea name="Location">Alwadi,Riyadh 13313</textarea>
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30057666.126941487!2d26.76963591357163!3d23.128239468441947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15e7b33fe7952a41%3A0x5960504bc21ab69b!2sSaudi%20Arabia!5e0!3m2!1sen!2ssa!4v1671543771269!5m2!1sen!2ssa" width="100%" height="auto" style="border:0;" 
+							allowfullscreen="" frameborder="0" area-hidden="false" tabindex="0"></iframe>
+						</div>
+						<input type="password" name="Create Password"  value="nouf1234567" />
+						<button>Save changes</button>
+						<input type="button" value="Go back" onclick="history.back()" class="back">
+					</form>
+		</div>
+
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-right">
+				<h1>Delete Account</h1>
+				<button class="D-btn" id="deletebtn">Delete</button>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="DeleteAccount" >
+		<form method="post">
+			<h4>Are you sure you want to delete your account?</h4>
+			<button class="D-btn"  type="submit" formaction="../index.html">Delete</button>
+		</form>
+
+	<script>var parent = document.querySelector(".DeleteAccount"),
+			btn = document.querySelector("#deletebtn"),
+			section = document.querySelector("section");
+		X = document.querySelector(".closeRequestForm"),
+
+			btn.addEventListener("click", appear, false);
+
+		document.querySelector(".closeRequestForm").addEventListener("click", disappearPostRequest);
+
+		function appear() {
+			parent.style.display = "block";
+			section.style.filter = "blur(10px)"
+		}
+
+		X.addEventListener("click", disappearX);
+
+		function disappearX() {
+			parent.style.display = "none";
+			section.style.filter = "blur(0px)"
+		}
+
+		function disappearPostRequest(e) {
+			if (e.target.className == ".PostRequest") {
+				parent.style.display = "none";
+				section.style.filter = "blur(0px)"
+			}
+		}</script>
+</div>
+
+</body>
+
+</html>
